@@ -1,4 +1,4 @@
-# py-kms
+# py-kms-metrics
 
 ![repo-size](https://img.shields.io/github/repo-size/Neon-Cyber-Crutches/py-kms-metrics)
 ![open-issues](https://img.shields.io/github/issues/Neon-Cyber-Crutches/py-kms-metrics)
