@@ -1,19 +1,22 @@
 # py-kms
 
-![repo-size](https://img.shields.io/github/repo-size/Py-KMS-Organization/py-kms)
-![open-issues](https://img.shields.io/github/issues/Py-KMS-Organization/py-kms)
-![last-commit](https://img.shields.io/github/last-commit/Py-KMS-Organization/py-kms/main)
+![repo-size](https://img.shields.io/github/repo-size/Neon-Cyber-Crutches/py-kms-metrics)
+![open-issues](https://img.shields.io/github/issues/Neon-Cyber-Crutches/py-kms-metrics)
+![last-commit](https://img.shields.io/github/last-commit/Neon-Cyber-Crutches/py-kms-metrics/main)
 ![docker-pulls](https://img.shields.io/docker/pulls/pykmsorg/py-kms)
 ![read-the-docs](https://img.shields.io/readthedocs/py-kms)
 
 _Keep in mind that this project is not intended for production use. Feel free to use it to test your own systems or maybe even learn something from the protocol structure._ 😉
+
+## About
+_py-kms-metrics_ is a fork of [Py-KMS-Organization/py-kms](https://github.com/Py-KMS-Organization/py-kms) created for personal use. The main goal is to produce Docker containers with KMS metrics in Prometheus format exposed.
 
 ## History
 _py-kms_ is a port of node-kms created by [cyrozap](http://forums.mydigitallife.info/members/183074-markedsword), which is a port of either the C#, C++, or .NET implementations of KMS Emulator. The original version was written by [CODYQX4](http://forums.mydigitallife.info/members/89933-CODYQX4) and is derived from the reverse-engineered code of Microsoft's official KMS.
 This version of _py-kms_ is for itself a fork of the original implementation by [SystemRage](https://github.com/SystemRage/py-kms), which was abandoned early 2021.
 
 ### What is with version `1.0.0`?
-Semantic versioning is now being used in this project, so checkout the [GitHub Releases](https://github.com/Py-KMS-Organization/py-kms/releases). Before, a `CHANGELOG.md` file was used to track changes, but got abandoned over time. Its content got moved into the [Historic Releases](docs/Historic%20Releases.md) document for reference. 
+Semantic versioning is now being used in this project, so checkout the [GitHub Releases](https://github.com/Neon-Cyber-Crutches/py-kms-metrics/releases). Before, a `CHANGELOG.md` file was used to track changes, but got abandoned over time. Its content got moved into the [Historic Releases](docs/Historic%20Releases.md) document for reference. 
 
 ## Features
 - Responds to `v4`, `v5`, and `v6` KMS requests.
@@ -30,8 +33,8 @@ The wiki has been completely reworked and is now available on [readthedocs.io](h
   - Note that both the address and port are optional.
   - It's allowed to use IPv4 and IPv6 addresses.
   - If you have an IPv6-capable dual-stack OS, a dual-stack socket is created when using a IPv6 address.
-  - **[In case your OS does not support IPv6](https://github.com/Py-KMS-Organization/py-kms/issues/108), make sure to explicitly specify the legacy IPv4 of `0.0.0.0`!**
-- To start the server automatically using Docker, execute `docker run -d --name py-kms --restart always -p 1688:1688 ghcr.io/py-kms-organization/py-kms`.
+  - **[In case your OS does not support IPv6](https://github.com/Neon-Cyber-Crutches/py-kms-metrics/issues/108), make sure to explicitly specify the legacy IPv4 of `0.0.0.0`!**
+- To start the server automatically using Docker, execute `docker run -d --name py-kms --restart always -p 1688:1688 ghcr.io/Neon-Cyber-Crutches/py-kms-metrics`.
 - To show the help pages type: `python3 pykms_Server.py -h` and `python3 pykms_Client.py -h`.
 
 ## License
