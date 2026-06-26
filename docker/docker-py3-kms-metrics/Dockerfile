@@ -19,7 +19,7 @@ ENV LOGSIZE=""
 ENV TZ=America/Chicago
 ENV WEBUI=1
 ENV WEBUI_PORT=8080
-ENV METRICS=0
+ENV METRICS=1
 ENV METRICS_PORT=9090
 
 # fix for apk 403 errors during build time
