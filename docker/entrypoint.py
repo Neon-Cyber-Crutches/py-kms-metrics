@@ -82,7 +82,7 @@ if __name__ == "__main__":
   loggersrv.debug("Running as UID/GID %s:%s" % (os.geteuid(), os.getegid()))
 
   change_tz(loggersrv)
-  childProcess = subprocess.Popen(PYTHON3 + " -u /usr/bin/start.py", preexec_fn=change_uid_grp(loggersrv), shell=True)
+  childProcess = subprocess.Popen([PYTHON3, "-u", "/usr/bin/start.py"], preexec_fn=change_uid_grp(loggersrv), env=os.environ)
   def shutdown(signum, frame):
     loggersrv.info("Received signal %s, shutting down..." % signum)
     childProcess.terminate() # This will also cause communicate() from below to continue
